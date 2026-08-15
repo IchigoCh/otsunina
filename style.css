@@ -1,257 +1,284 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+/* ================================================================
+   BASIC PAGE SETTINGS
+   ================================================================ */
 
-    <!-- Makes the site behave properly on phones -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    box-sizing: border-box;
+}
 
-    <title>Graduation Tribute</title>
+html {
+    scroll-behavior: smooth;
+}
 
-    <!-- Our stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
+body {
+    margin: 0;
+    padding: 0;
 
-<body>
+    /* Main page background */
+    background: #ffbebe;
 
-    <main class="page">
+    color: #222;
 
-        <!-- =========================================================
-             HEADER IMAGE
-             
-             CHANGE THIS URL:
-             Replace the URL between the quotation marks with your
-             header image URL.
-             ========================================================= -->
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
-        <header class="header">
-            <img
-                src="PUT_HEADER_IMAGE_URL_HERE"
-                alt="Graduation header image"
-                class="header-image"
-            >
-        </header>
+    line-height: 1.6;
+
+    /* Center everything */
+    text-align: center;
+}
 
 
-        <!-- =========================================================
-             INTRO / TEXT AREA
-             
-             Put whatever message you want inside this section.
-             ========================================================= -->
+/* ================================================================
+   MAIN PAGE CONTAINER
+   ================================================================ */
 
-        <section class="intro">
-            <h1>PUT YOUR TITLE HERE</h1>
+.page {
+    width: 100%;
+    max-width: 700px;
 
-            <p>
-                PUT YOUR INTRODUCTORY TEXT HERE.
-            </p>
+    margin: 0 auto;
+    padding: 20px 15px 50px;
 
-            <p>
-                You can have multiple paragraphs if you want.
-            </p>
-        </section>
+    text-align: center;
+}
 
 
-        <!-- =========================================================
-             BOX 1 — TWO IMAGES
-             
-             The images are intentionally arranged VERTICALLY.
-             
-             Replace:
-             PUT_FIRST_IMAGE_URL_HERE
-             PUT_SECOND_IMAGE_URL_HERE
-             
-             Clicking either image opens the full-size image.
-             ========================================================= -->
+/* ================================================================
+   HEADER
+   ================================================================ */
 
-        <section class="content-box">
+.header {
+    width: 100%;
+    margin-bottom: 20px;
 
-            <h2>BOX 1 HEADER</h2>
+    text-align: center;
+}
 
-            <a
-                href="PUT_FIRST_IMAGE_URL_HERE"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img
-                    src="PUT_FIRST_IMAGE_URL_HERE"
-                    alt="Image 1"
-                    class="content-image"
-                >
-            </a>
+.header-image {
+    display: block;
 
-            <a
-                href="PUT_SECOND_IMAGE_URL_HERE"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img
-                    src="PUT_SECOND_IMAGE_URL_HERE"
-                    alt="Image 2"
-                    class="content-image"
-                >
-            </a>
+    width: 100%;
+    height: auto;
 
-        </section>
+    border-radius: 14px;
+
+    margin: 0 auto;
+}
 
 
-        <!-- =========================================================
-             BOX 2 — YOUTUBE VIDEO
-             
-             Replace PUT_YOUTUBE_VIDEO_ID_1 with the video's ID.
-             
-             Example:
-             https://www.youtube.com/watch?v=dQw4w9WgXcQ
-             
-             The ID is:
-             dQw4w9WgXcQ
-             ========================================================= -->
+/* ================================================================
+   INTRODUCTION
+   ================================================================ */
 
-        <section class="content-box">
+.intro {
+    width: 100%;
 
-            <h2>BOX 2 HEADER</h2>
+    text-align: center;
 
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/PUT_YOUTUBE_VIDEO_ID_1"
-                    title="YouTube video"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
+    padding: 10px 15px 25px;
+}
 
-        </section>
+.intro h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-size: 2rem;
+}
+
+.intro p {
+    margin: 10px 0;
+}
 
 
-        <!-- =========================================================
-             BOX 3 — YOUTUBE VIDEO
-             ========================================================= -->
+/* ================================================================
+   CONTENT BOXES
+   ================================================================ */
 
-        <section class="content-box">
+/*
+   Every content section is now a clearly visible rounded box.
 
-            <h2>BOX 3 HEADER</h2>
+   The height is NOT fixed, so each box automatically grows or
+   shrinks according to whatever content you put inside it.
+*/
 
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/PUT_YOUTUBE_VIDEO_ID_2"
-                    title="YouTube video"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
+.content-box {
+    width: 100%;
 
-        </section>
+    background: #ffe1e1;
 
+    margin: 0 auto 25px;
+    padding: 20px;
 
-        <!-- =========================================================
-             BOX 4 — YOUTUBE VIDEO
-             ========================================================= -->
+    border-radius: 20px;
 
-        <section class="content-box">
+    /* Makes the boxes visibly distinct from the background */
+    border: 2px solid rgba(255, 255, 255, 0.65);
 
-            <h2>BOX 4 HEADER</h2>
+    /* Soft shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/PUT_YOUTUBE_VIDEO_ID_3"
-                    title="YouTube video"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
+    text-align: center;
+}
 
-        </section>
+.content-box h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    font-size: 1.4rem;
+}
 
 
-        <!-- =========================================================
-             BOX 5 — TWO YOUTUBE PLAYLISTS + TEXT + GOOGLE DRIVE
-             
-             IMPORTANT:
-             Playlist IDs are NOT the same thing as video IDs.
-             
-             Replace:
-             PUT_YOUTUBE_PLAYLIST_ID_1
-             PUT_YOUTUBE_PLAYLIST_ID_2
-             
-             with the corresponding playlist IDs.
-             ========================================================= -->
+/* ================================================================
+   IMAGES
+   ================================================================ */
 
-        <section class="content-box">
+.content-image {
+    display: block;
 
-            <h2>BOX 5 HEADER</h2>
+    width: 100%;
+    height: auto;
 
+    margin: 0 auto 20px;
 
-            <!-- PLAYLIST 1 -->
+    border-radius: 12px;
 
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/videoseries?list=PUT_YOUTUBE_PLAYLIST_ID_1"
-                    title="YouTube playlist 1"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
+    cursor: pointer;
+
+    transition: opacity 0.2s ease;
+}
+
+.content-image:hover {
+    opacity: 0.9;
+}
 
 
-            <!-- PLAYLIST 2 -->
+/*
+   Don't add unnecessary space after the final image.
+*/
 
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/videoseries?list=PUT_YOUTUBE_PLAYLIST_ID_2"
-                    title="YouTube playlist 2"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
+.content-box a:last-child .content-image {
+    margin-bottom: 0;
+}
 
 
-            <!-- TEXT -->
+/* ================================================================
+   YOUTUBE VIDEOS
+   ================================================================ */
 
-            <div class="box-text">
+.video-container {
+    position: relative;
 
-                <p>
-                    PUT YOUR TEXT FOR BOX 5 HERE.
-                </p>
+    width: 100%;
 
-                <p>
-                    You can put additional information here.
-                </p>
+    aspect-ratio: 16 / 9;
 
-                <!-- =================================================
-                     GOOGLE DRIVE LINK
+    margin: 0 auto 20px;
 
-                     Replace the URL below with your Google Drive
-                     link.
-                     ================================================= -->
+    overflow: hidden;
 
-                <a
-                    href="PUT_GOOGLE_DRIVE_LINK_HERE"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="drive-link"
-                >
-                    OPEN GOOGLE DRIVE
-                </a>
+    border-radius: 12px;
+}
 
-            </div>
+.video-container:last-child {
+    margin-bottom: 0;
+}
 
-        </section>
+.video-container iframe {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
 
 
-        <!-- =========================================================
-             OPTIONAL FOOTER
-             ========================================================= -->
+/* ================================================================
+   BOX 5 TEXT
+   ================================================================ */
 
-        <footer>
-            <p>PUT FOOTER TEXT HERE</p>
-        </footer>
+.box-text {
+    margin-top: 20px;
 
-    </main>
+    text-align: center;
+}
 
-</body>
-</html>
+.box-text p {
+    margin: 10px 0 15px;
+}
+
+
+/* ================================================================
+   GOOGLE DRIVE LINK
+   ================================================================ */
+
+.drive-link {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 10px 18px;
+
+    background: #222;
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: opacity 0.2s ease;
+}
+
+.drive-link:hover {
+    opacity: 0.8;
+}
+
+
+/* ================================================================
+   FOOTER
+   ================================================================ */
+
+footer {
+    padding: 20px 0;
+
+    text-align: center;
+
+    font-size: 0.85rem;
+
+    opacity: 0.6;
+}
+
+
+/* ================================================================
+   MOBILE
+   ================================================================ */
+
+@media (max-width: 600px) {
+
+    .page {
+        padding: 10px 10px 40px;
+    }
+
+    .content-box {
+        padding: 15px;
+
+        border-radius: 16px;
+    }
+
+    .intro h1 {
+        font-size: 1.6rem;
+    }
+
+    .content-box h2 {
+        font-size: 1.25rem;
+    }
+}
