@@ -341,11 +341,14 @@ footer {
 
     text-align: center;
 
-    font-size: 0.85rem;
+    font-family: "Lobster", cursive;
 
-    opacity: 0.6;
+    font-size: 2rem;
+
+    line-height: 1.25;
+
+    opacity: 1;
 }
-
 
 /* ================================================================
    MOBILE DEVICES
