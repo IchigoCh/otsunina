@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the site behave properly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Graduation Tribute</title>
+
+    <!-- Our stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <!-- =========================================================
+             HEADER IMAGE
+             
+             CHANGE THIS URL:
+             Replace the URL between the quotation marks with your
+             header image URL.
+             ========================================================= -->
+
+        <header class="header">
+            <img
+                src="PUT_HEADER_IMAGE_URL_HERE"
+                alt="Graduation header image"
+                class="header-image"
+            >
+        </header>
+
+
+        <!-- =========================================================
+             INTRO / TEXT AREA
+             
+             Put whatever message you want inside this section.
+             ========================================================= -->
+
+        <section class="intro">
+            <h1>PUT YOUR TITLE HERE</h1>
+
+            <p>
+                PUT YOUR INTRODUCTORY TEXT HERE.
+            </p>
+
+            <p>
+                You can have multiple paragraphs if you want.
+            </p>
+        </section>
+
+
+        <!-- =========================================================
+             BOX 1 — TWO IMAGES
+             
+             The images are intentionally arranged VERTICALLY.
+             
+             Replace:
+             PUT_FIRST_IMAGE_URL_HERE
+             PUT_SECOND_IMAGE_URL_HERE
+             
+             Clicking either image opens the full-size image.
+             ========================================================= -->
+
+        <section class="content-box">
+
+            <h2>BOX 1 HEADER</h2>
+
+            <a
+                href="PUT_FIRST_IMAGE_URL_HERE"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="PUT_FIRST_IMAGE_URL_HERE"
+                    alt="Image 1"
+                    class="content-image"
+                >
+            </a>
+
+            <a
+                href="PUT_SECOND_IMAGE_URL_HERE"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="PUT_SECOND_IMAGE_URL_HERE"
+                    alt="Image 2"
+                    class="content-image"
+                >
+            </a>
+
+        </section>
+
+
+        <!-- =========================================================
+             BOX 2 — YOUTUBE VIDEO
+             
+             Replace PUT_YOUTUBE_VIDEO_ID_1 with the video's ID.
+             
+             Example:
+             https://www.youtube.com/watch?v=dQw4w9WgXcQ
+             
+             The ID is:
+             dQw4w9WgXcQ
+             ========================================================= -->
+
+        <section class="content-box">
+
+            <h2>BOX 2 HEADER</h2>
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/PUT_YOUTUBE_VIDEO_ID_1"
+                    title="YouTube video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             BOX 3 — YOUTUBE VIDEO
+             ========================================================= -->
+
+        <section class="content-box">
+
+            <h2>BOX 3 HEADER</h2>
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/PUT_YOUTUBE_VIDEO_ID_2"
+                    title="YouTube video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             BOX 4 — YOUTUBE VIDEO
+             ========================================================= -->
+
+        <section class="content-box">
+
+            <h2>BOX 4 HEADER</h2>
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/PUT_YOUTUBE_VIDEO_ID_3"
+                    title="YouTube video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             BOX 5 — TWO YOUTUBE PLAYLISTS + TEXT + GOOGLE DRIVE
+             
+             IMPORTANT:
+             Playlist IDs are NOT the same thing as video IDs.
+             
+             Replace:
+             PUT_YOUTUBE_PLAYLIST_ID_1
+             PUT_YOUTUBE_PLAYLIST_ID_2
+             
+             with the corresponding playlist IDs.
+             ========================================================= -->
+
+        <section class="content-box">
+
+            <h2>BOX 5 HEADER</h2>
+
+
+            <!-- PLAYLIST 1 -->
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/videoseries?list=PUT_YOUTUBE_PLAYLIST_ID_1"
+                    title="YouTube playlist 1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+
+            <!-- PLAYLIST 2 -->
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/videoseries?list=PUT_YOUTUBE_PLAYLIST_ID_2"
+                    title="YouTube playlist 2"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+
+            <!-- TEXT -->
+
+            <div class="box-text">
+
+                <p>
+                    PUT YOUR TEXT FOR BOX 5 HERE.
+                </p>
+
+                <p>
+                    You can put additional information here.
+                </p>
+
+                <!-- =================================================
+                     GOOGLE DRIVE LINK
+
+                     Replace the URL below with your Google Drive
+                     link.
+                     ================================================= -->
+
+                <a
+                    href="PUT_GOOGLE_DRIVE_LINK_HERE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="drive-link"
+                >
+                    OPEN GOOGLE DRIVE
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             OPTIONAL FOOTER
+             ========================================================= -->
+
+        <footer>
+            <p>PUT FOOTER TEXT HERE</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
