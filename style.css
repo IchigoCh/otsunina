@@ -16,6 +16,16 @@ body {
     margin: 0;
     padding: 0;
 
+    background: #ffbebe;
+
+    color: #222222;
+
+    font-family: "Dancing Script", cursive;
+
+    line-height: 1.6;
+
+    text-align: center;
+}
     /*
        ENTIRE PAGE BACKGROUND
     */
@@ -124,12 +134,14 @@ background: #ffbebe;
 .intro h1 {
     margin: 0 0 15px;
 
+    font-family: "Lobster", cursive;
+
     font-size: 2rem;
 
     line-height: 1.25;
+
+    color: #ffffff;
 }
-
-
 .intro p {
     margin: 10px 0;
 }
