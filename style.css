@@ -1,23 +1,27 @@
 /* ================================================================
-   BASIC PAGE SETTINGS
+   GLOBAL SETTINGS
    ================================================================ */
 
 * {
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
+
 
 body {
     margin: 0;
     padding: 0;
 
-    /* Main page background */
-    background: #ffbebe;
+    /*
+       ENTIRE PAGE BACKGROUND
+    */
+    background: #ffffff;
 
-    color: #222;
+    color: #222222;
 
     font-family:
         Arial,
@@ -26,57 +30,83 @@ body {
 
     line-height: 1.6;
 
-    /* Center everything */
     text-align: center;
 }
 
 
 /* ================================================================
-   MAIN PAGE CONTAINER
+   FULL-WIDTH HEADER
+   ================================================================ */
+
+/*
+   IMPORTANT:
+
+   The header is NOT inside .page.
+
+   Therefore it stretches across the entire browser window.
+*/
+
+.header {
+    width: 100%;
+
+    height: 493px;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+   Header image.
+
+   Height is fixed at exactly 493px.
+
+   Width remains automatic so the original aspect ratio is
+   preserved and the image is NOT distorted.
+*/
+
+.header-image {
+    display: block;
+
+    height: 493px;
+
+    width: auto;
+
+    max-width: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+}
+
+
+/* ================================================================
+   MAIN CONTENT CONTAINER
    ================================================================ */
 
 .page {
     width: 100%;
+
     max-width: 700px;
 
     margin: 0 auto;
+
     padding: 20px 15px 50px;
 
     text-align: center;
 }
 
-
-/* ================================================================
-   HEADER
-   ================================================================ */
-
-.header {
-    width: 100%;
-    height: 493px;
-
-    margin-bottom: 20px;
-
-    text-align: center;
-
-    overflow: hidden;
-}
-
-.header-image {
-    display: block;
-
-    width: 100%;
-    height: 493px;
-
-    /*
-       Prevent the browser from shrinking the image to fit.
-       The image fills the 493px header area.
-    */
-    object-fit: cover;
-
-    margin: 0 auto;
-
-    border-radius: 14px;
-}
 
 /* ================================================================
    INTRODUCTION
@@ -85,17 +115,20 @@ body {
 .intro {
     width: 100%;
 
-    text-align: center;
-
     padding: 10px 15px 25px;
+
+    text-align: center;
 }
+
 
 .intro h1 {
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
 
     font-size: 2rem;
+
+    line-height: 1.25;
 }
+
 
 .intro p {
     margin: 10px 0;
@@ -106,50 +139,68 @@ body {
    CONTENT BOXES
    ================================================================ */
 
-/*
-   Every content section is now a clearly visible rounded box.
-
-   The height is NOT fixed, so each box automatically grows or
-   shrinks according to whatever content you put inside it.
-*/
-
 .content-box {
     width: 100%;
 
+    /*
+       BOX COLOR
+    */
     background: #ffe1e1;
 
+    /*
+       Automatically grows according to its contents.
+    */
+    height: auto;
+
     margin: 0 auto 25px;
+
     padding: 20px;
 
+    /*
+       ROUNDED CORNERS
+    */
     border-radius: 20px;
 
-    /* Makes the boxes visibly distinct from the background */
-    border: 2px solid rgba(255, 255, 255, 0.65);
+    /*
+       Subtle border makes the box clearly visible.
+    */
+    border: 2px solid rgba(255, 255, 255, 0.8);
 
-    /* Soft shadow */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    /*
+       Subtle shadow.
+    */
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.10);
 
     text-align: center;
 }
 
-.content-box h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
 
-    text-align: center;
+.content-box h2 {
+    margin: 0 0 20px;
 
     font-size: 1.4rem;
+
+    line-height: 1.3;
+
+    text-align: center;
 }
 
 
 /* ================================================================
-   IMAGES
+   BOX 1 — IMAGES
    ================================================================ */
+
+/*
+   Images are displayed vertically because each one is a block
+   element occupying the full available width.
+*/
 
 .content-image {
     display: block;
 
     width: 100%;
+
     height: auto;
 
     margin: 0 auto 20px;
@@ -161,13 +212,14 @@ body {
     transition: opacity 0.2s ease;
 }
 
+
 .content-image:hover {
     opacity: 0.9;
 }
 
 
 /*
-   Don't add unnecessary space after the final image.
+   Remove bottom margin from the final image.
 */
 
 .content-box a:last-child .content-image {
@@ -178,6 +230,10 @@ body {
 /* ================================================================
    YOUTUBE VIDEOS
    ================================================================ */
+
+/*
+   Responsive 16:9 video container.
+*/
 
 .video-container {
     position: relative;
@@ -193,9 +249,6 @@ body {
     border-radius: 12px;
 }
 
-.video-container:last-child {
-    margin-bottom: 0;
-}
 
 .video-container iframe {
     position: absolute;
@@ -210,15 +263,27 @@ body {
 }
 
 
+/*
+   Remove unnecessary bottom space from the final video.
+*/
+
+.video-container:last-child {
+    margin-bottom: 0;
+}
+
+
 /* ================================================================
    BOX 5 TEXT
    ================================================================ */
 
 .box-text {
+    width: 100%;
+
     margin-top: 20px;
 
     text-align: center;
 }
+
 
 .box-text p {
     margin: 10px 0 15px;
@@ -226,17 +291,19 @@ body {
 
 
 /* ================================================================
-   GOOGLE DRIVE LINK
+   GOOGLE DRIVE BUTTON
    ================================================================ */
 
 .drive-link {
     display: inline-block;
 
     margin-top: 10px;
+
     padding: 10px 18px;
 
-    background: #222;
-    color: white;
+    background: #222222;
+
+    color: #ffffff;
 
     border-radius: 8px;
 
@@ -246,6 +313,7 @@ body {
 
     transition: opacity 0.2s ease;
 }
+
 
 .drive-link:hover {
     opacity: 0.8;
@@ -268,14 +336,42 @@ footer {
 
 
 /* ================================================================
-   MOBILE
+   MOBILE DEVICES
    ================================================================ */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+
+    /*
+       On smaller screens the header remains 493px tall,
+       but the image itself is allowed to scale down so that
+       it doesn't cause horizontal scrolling.
+
+       The white background remains visible around it.
+    */
+
+    .header {
+        height: 493px;
+
+        overflow: hidden;
+    }
+
+
+    .header-image {
+        width: 100%;
+
+        height: 493px;
+
+        object-fit: contain;
+    }
+
 
     .page {
-        padding: 10px 10px 40px;
+        padding:
+            15px
+            10px
+            40px;
     }
+
 
     .content-box {
         padding: 15px;
@@ -283,11 +379,14 @@ footer {
         border-radius: 16px;
     }
 
+
     .intro h1 {
         font-size: 1.6rem;
     }
 
+
     .content-box h2 {
         font-size: 1.25rem;
     }
+
 }
