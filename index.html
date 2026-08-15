@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
-    <!-- Makes the site behave properly on phones -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>OtsNina</title>
+    <title>Graduation Tribute</title>
 
-    <!-- Our stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+
+
+    <!-- =========================================================
+         FULL-WIDTH HEADER
+         
+         CHANGE:
+         PUT_HEADER_IMAGE_URL_HERE
+         
+         Replace this with the URL of your header image.
+         
+         The header image is displayed at 493px tall.
+         ========================================================= -->
+
+    <header class="header">
+
+        <img
+            src="https://i.imgur.com/Xj8MeWa.png"
+            alt="Graduation header"
+            class="header-image"
+        >
+
+    </header>
+
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+         
+         Everything below the header lives inside the centered
+         content column.
+         ========================================================= -->
 
     <main class="page">
 
-        <!-- =========================================================
-             HEADER IMAGE
-             
-             CHANGE THIS URL:
-             Replace the URL between the quotation marks with your
-             header image URL.
-             ========================================================= -->
 
-        <header class="header">
-            <img
-                src="https://i.imgur.com/Xj8MeWa.png"
-                class="header-image"
-            >
-        </header>
-
-
-        <!-- =========================================================
-             INTRO / TEXT AREA
-             
-             Put whatever message you want inside this section.
-             ========================================================= -->
+        <!-- =====================================================
+             INTRO / TEXT
+             ===================================================== -->
 
         <section class="intro">
+
             <h1>PUT YOUR TITLE HERE</h1>
 
             <p>
@@ -46,187 +64,226 @@
             </p>
 
             <p>
-                You can have multiple paragraphs if you want.
+                PUT ADDITIONAL INTRO TEXT HERE IF NEEDED.
             </p>
+
         </section>
 
 
-        <!-- =========================================================
+
+        <!-- =====================================================
              BOX 1 — TWO IMAGES
              
-             The images are intentionally arranged VERTICALLY.
+             Images are intentionally stacked vertically.
              
-             Replace:
+             CHANGE:
              PUT_FIRST_IMAGE_URL_HERE
              PUT_SECOND_IMAGE_URL_HERE
              
              Clicking either image opens the full-size image.
-             ========================================================= -->
+             ===================================================== -->
 
         <section class="content-box">
 
             <h2>BOX 1 HEADER</h2>
+
+
+            <!-- FIRST IMAGE -->
 
             <a
                 href="PUT_FIRST_IMAGE_URL_HERE"
                 target="_blank"
                 rel="noopener noreferrer"
             >
+
                 <img
                     src="PUT_FIRST_IMAGE_URL_HERE"
                     alt="Image 1"
                     class="content-image"
                 >
+
             </a>
+
+
+            <!-- SECOND IMAGE -->
 
             <a
                 href="PUT_SECOND_IMAGE_URL_HERE"
                 target="_blank"
                 rel="noopener noreferrer"
             >
+
                 <img
                     src="PUT_SECOND_IMAGE_URL_HERE"
                     alt="Image 2"
                     class="content-image"
                 >
+
             </a>
 
         </section>
 
 
-        <!-- =========================================================
+
+        <!-- =====================================================
              BOX 2 — YOUTUBE VIDEO
              
-             Replace PUT_YOUTUBE_VIDEO_ID_1 with the video's ID.
+             CHANGE:
+             PUT_YOUTUBE_VIDEO_ID_1
              
              Example:
-             https://www.youtube.com/watch?v=dQw4w9WgXcQ
+             https://www.youtube.com/watch?v=ABC123
              
-             The ID is:
-             dQw4w9WgXcQ
-             ========================================================= -->
+             The ID would be:
+             ABC123
+             ===================================================== -->
 
         <section class="content-box">
 
             <h2>BOX 2 HEADER</h2>
 
             <div class="video-container">
+
                 <iframe
                     src="https://www.youtube.com/embed/PUT_YOUTUBE_VIDEO_ID_1"
-                    title="YouTube video"
-                    frameborder="0"
+                    title="YouTube video 1"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
+
             </div>
 
         </section>
 
 
-        <!-- =========================================================
+
+        <!-- =====================================================
              BOX 3 — YOUTUBE VIDEO
-             ========================================================= -->
+             
+             CHANGE:
+             PUT_YOUTUBE_VIDEO_ID_2
+             ===================================================== -->
 
         <section class="content-box">
 
             <h2>BOX 3 HEADER</h2>
 
             <div class="video-container">
+
                 <iframe
                     src="https://www.youtube.com/embed/PUT_YOUTUBE_VIDEO_ID_2"
-                    title="YouTube video"
-                    frameborder="0"
+                    title="YouTube video 2"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
+
             </div>
 
         </section>
 
 
-        <!-- =========================================================
+
+        <!-- =====================================================
              BOX 4 — YOUTUBE VIDEO
-             ========================================================= -->
+             
+             CHANGE:
+             PUT_YOUTUBE_VIDEO_ID_3
+             ===================================================== -->
 
         <section class="content-box">
 
             <h2>BOX 4 HEADER</h2>
 
             <div class="video-container">
+
                 <iframe
                     src="https://www.youtube.com/embed/PUT_YOUTUBE_VIDEO_ID_3"
-                    title="YouTube video"
-                    frameborder="0"
+                    title="YouTube video 3"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
+
             </div>
 
         </section>
 
 
-        <!-- =========================================================
-             BOX 5 — TWO YOUTUBE PLAYLISTS + TEXT + GOOGLE DRIVE
+
+        <!-- =====================================================
+             BOX 5 — TWO YOUTUBE PLAYLISTS
              
-             IMPORTANT:
-             Playlist IDs are NOT the same thing as video IDs.
+             PLUS TEXT
              
-             Replace:
+             PLUS GOOGLE DRIVE LINK
+             
+             CHANGE:
              PUT_YOUTUBE_PLAYLIST_ID_1
              PUT_YOUTUBE_PLAYLIST_ID_2
-             
-             with the corresponding playlist IDs.
-             ========================================================= -->
+             PUT_GOOGLE_DRIVE_LINK_HERE
+             ===================================================== -->
 
         <section class="content-box">
 
             <h2>BOX 5 HEADER</h2>
 
 
-            <!-- PLAYLIST 1 -->
+
+            <!-- =================================================
+                 PLAYLIST 1
+                 ================================================= -->
 
             <div class="video-container">
+
                 <iframe
                     src="https://www.youtube.com/embed/videoseries?list=PUT_YOUTUBE_PLAYLIST_ID_1"
                     title="YouTube playlist 1"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
+
             </div>
 
 
-            <!-- PLAYLIST 2 -->
+
+            <!-- =================================================
+                 PLAYLIST 2
+                 ================================================= -->
 
             <div class="video-container">
+
                 <iframe
                     src="https://www.youtube.com/embed/videoseries?list=PUT_YOUTUBE_PLAYLIST_ID_2"
                     title="YouTube playlist 2"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
+
             </div>
 
 
-            <!-- TEXT -->
+
+            <!-- =================================================
+                 BOX 5 TEXT
+                 ================================================= -->
 
             <div class="box-text">
 
                 <p>
-                    PUT YOUR TEXT FOR BOX 5 HERE.
+                    PUT YOUR BOX 5 TEXT HERE.
                 </p>
 
                 <p>
-                    You can put additional information here.
+                    PUT ADDITIONAL BOX 5 TEXT HERE IF NEEDED.
                 </p>
 
-                <!-- =================================================
-                     GOOGLE DRIVE LINK
 
-                     Replace the URL below with your Google Drive
-                     link.
-                     ================================================= -->
+
+                <!-- =============================================
+                     GOOGLE DRIVE LINK
+                     
+                     CHANGE:
+                     PUT_GOOGLE_DRIVE_LINK_HERE
+                     ============================================= -->
 
                 <a
                     href="PUT_GOOGLE_DRIVE_LINK_HERE"
@@ -242,15 +299,22 @@
         </section>
 
 
-        <!-- =========================================================
-             OPTIONAL FOOTER
-             ========================================================= -->
+
+        <!-- =====================================================
+             FOOTER
+             ===================================================== -->
 
         <footer>
-            <p>PUT FOOTER TEXT HERE</p>
+
+            <p>
+                PUT FOOTER TEXT HERE
+            </p>
+
         </footer>
+
 
     </main>
 
 </body>
+
 </html>
