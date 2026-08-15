@@ -57,8 +57,7 @@ background: #ffbebe;
 */
 
 .header {
-    width: 100%;
-
+    width: 100vw;
     height: 493px;
 
     margin: 0;
@@ -74,7 +73,6 @@ background: #ffbebe;
     align-items: center;
 }
 
-
 /*
    Header image.
 
@@ -87,19 +85,17 @@ background: #ffbebe;
 .header-image {
     display: block;
 
+    width: 100vw;
     height: 493px;
 
-    width: auto;
-
-    max-width: none;
-
     margin: 0;
-
     padding: 0;
 
     border: 0;
-}
 
+    object-fit: cover;
+    object-position: center center;
+}
 
 /* ================================================================
    MAIN CONTENT CONTAINER
